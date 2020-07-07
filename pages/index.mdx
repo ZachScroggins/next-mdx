@@ -1,39 +1,14 @@
 import { useState } from 'react';
 import ExampleContent from '../components/ExampleContent.mdx';
-import JSComp from '../components/JSComp';
+import HeaderNav from '../components/HeaderNav';
 
-<ExampleContent title={'MDX with Tailwind Default Styling'} />
+<HeaderNav content={'(This is a JS component in a MDX file)'} />
 
-,
-
-,
-
-,
-
-,
-
-,
-
-,
-
-,
-
-<JSComp content={'This is a JS component in a MDX file'} />
-
-,
-
-,
-
-,
-
-,
-
-,
-
-,
-
-,
-
-<div className='markdown-body'>
-  <ExampleContent title={'MDX with Tailwind Github wrapper'} />
+<div className='md:flex'>
+  <div className='md:w-1/2 p-6'>
+    <ExampleContent title={'MDX with Tailwind Default Styling'} />
+  </div>
+  <div className='md:w-1/2 p-6 markdown-body'>
+    <ExampleContent title={'MDX with Tailwind Github wrapper'} />
+  </div>
 </div>

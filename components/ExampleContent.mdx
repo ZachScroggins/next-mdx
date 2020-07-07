@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 <h1>{props.title}</h1>
 
+<!-- MDX -->
+
 ## _This_ is MDX!
 
 ### :+1: :heartbeat:
@@ -12,7 +14,11 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut aperiam quae modi n
 
 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non magnam corporis nobis facilis soluta, autem sequi dolorem odit alias neque, provident adipisci ea corrupti laboriosam sed, minima iste nemo. Unde numquam ratione eaque beatae, aperiam quo repudiandae pariatur cupiditate architecto.
 
-<h2 style={{ color: 'purple' }}>
+---
+
+<!-- JSX -->
+
+<h2 className='text-primary' style={{ fontWeight: 'bold' }}>
   <em>This</em> is JSX!
 </h2>
 
@@ -25,7 +31,7 @@ export const Counter2 = () => {
     <>
       {/* <button onClick={handleIncrease}>increase</button> */}
       <button
-        className='bg-primary rounded px-2 py-1 text-white'
+        className='bg-primary rounded px-2 py-1 text-white hover:bg-primary-light focus:outline-none'
         onClick={() => setCount(count + 1)}
       >
         Clicked {count} times
@@ -34,7 +40,9 @@ export const Counter2 = () => {
   );
 };
 
-### Click me :point_right: <Counter2 />
+<h3 className='text-primary '>
+  Click me 👉 <Counter2 />
+</h3>
 
 <p className='text-primary'>
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus alias

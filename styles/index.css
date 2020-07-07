@@ -1,7 +1,7 @@
 @tailwind base;
 
-/* hr {
-  @apply my-4;
+/* h1 {
+  @apply text-5xl;
 } */
 
 @tailwind components;
