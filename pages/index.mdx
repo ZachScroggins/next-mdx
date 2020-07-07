@@ -1,0 +1,34 @@
+import { useState } from 'react';
+
+# :wave: Hello, world!
+
+## _This_ is MDX!
+
+<h2 style={{ color: 'red' }}><em>This</em> is JSX!</h2>
+
+> A MDX **blockquote** with _some_ emphasis.
+
+---
+
+# :+1:
+
+# :heartbeat:
+
+---
+
+export const Counter = () => {
+  const [count, setCount] = useState(1);
+  const handleIncrease = () => {
+    setCount(count + 1);
+  };
+  return (
+    <>
+      {/* <button onClick={handleIncrease}>increase</button> */}
+      <button onClick={() => setCount(count + 1)}>Clicked {count} times</button>
+    </>
+  );
+};
+
+## Click me :point_right: <Counter />
+
+---
