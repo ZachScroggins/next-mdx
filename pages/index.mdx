@@ -1,38 +1,38 @@
 import { useState } from 'react';
+import ExampleContent from '../components/ExampleContent.mdx';
 
-# :wave: Hello, world!
+<ExampleContent title={'MDX with Tailwind Default Styling'} />
 
-## _This_ is MDX!
+,
 
-<h2 style={{ color: 'red' }}><em>This</em> is JSX!</h2>
+,
 
-> A MDX **blockquote** with _some_ emphasis.
+,
 
----
+,
 
-# :+1:
+,
 
-# :heartbeat:
+,
 
----
+,
 
-export const Counter = () => {
-  const [count, setCount] = useState(1);
-  const handleIncrease = () => {
-    setCount(count + 1);
-  };
-  return (
-    <>
-      {/* <button onClick={handleIncrease}>increase</button> */}
-      <button onClick={() => setCount(count + 1)}>Clicked {count} times</button>
-    </>
-  );
-};
+,
 
-## Click me :point_right: <Counter />
+,
 
----
+,
 
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut aperiam quae modi nostrum sit voluptate harum tempora similique. Ipsa, laboriosam.
+,
 
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non magnam corporis nobis facilis soluta, autem sequi dolorem odit alias neque, provident adipisci ea corrupti laboriosam sed, minima iste nemo. Unde numquam ratione eaque beatae, aperiam quo repudiandae pariatur cupiditate architecto.
+,
+
+,
+
+,
+
+,
+
+<div className='markdown-body'>
+  <ExampleContent title={'MDX with Tailwind Github wrapper'} />
+</div>
