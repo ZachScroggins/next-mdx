@@ -2,7 +2,7 @@ import React from 'react';
 
 const fart = () => {
   return (
-    <div>
+    <div className='bg-gray-600'>
       <p>p</p>
       <h1>1</h1>
     </div>
