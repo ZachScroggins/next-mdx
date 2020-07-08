@@ -1,34 +1,17 @@
 import { useState } from 'react';
+import ExampleContent from '../components/ExampleContent.mdx';
+import HeaderNav from '../components/HeaderNav';
+import ScrollTop from '../components/ScrollTop';
 
-# :wave: Hello, world!
+<HeaderNav content={'(This is a JS component in a MDX file)'} />
 
-## _This_ is MDX!
+<div className='md:flex'>
+  <div className='md:w-1/2 p-6'>
+    <ExampleContent title={'MDX with Tailwind Default Styling'} />
+  </div>
+  <div className='md:w-1/2 p-6 markdown-body'>
+    <ExampleContent title={'MDX with Tailwind Github wrapper'} />
+  </div>
+</div>
 
-<h2 style={{ color: 'red' }}><em>This</em> is JSX!</h2>
-
-> A MDX **blockquote** with _some_ emphasis.
-
----
-
-# :+1:
-
-# :heartbeat:
-
----
-
-export const Counter = () => {
-  const [count, setCount] = useState(1);
-  const handleIncrease = () => {
-    setCount(count + 1);
-  };
-  return (
-    <>
-      {/* <button onClick={handleIncrease}>increase</button> */}
-      <button onClick={() => setCount(count + 1)}>Clicked {count} times</button>
-    </>
-  );
-};
-
-## Click me :point_right: <Counter />
-
----
+<ScrollTop />

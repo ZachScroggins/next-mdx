@@ -1,0 +1,184 @@
+import { useState } from 'react';
+
+<h1>{props.title}</h1>
+
+<!-- MDX -->
+
+## _This_ is MDX!
+
+### :+1: :heartbeat:
+
+> A MDX **blockquote** with _some emphasis._
+
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut aperiam quae modi nostrum sit voluptate harum tempora similique. Ipsa, laboriosam.
+
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non magnam corporis nobis facilis soluta, autem sequi dolorem odit alias neque, provident adipisci ea corrupti laboriosam sed, minima iste nemo. Unde numquam ratione eaque beatae, aperiam quo repudiandae pariatur cupiditate architecto.
+
+---
+
+<!-- JSX -->
+
+<h2 className='text-primary' style={{ fontWeight: 'bold' }}>
+  <em>This</em> is JSX!
+</h2>
+
+export const Counter2 = () => {
+  const [count, setCount] = useState(1);
+  const x = true;
+  const handleIncrease = () => {
+    setCount(count + 1);
+  };
+  return (
+    <>
+      {/* <button onClick={handleIncrease}>increase</button> */}
+      {/* <button
+        className='bg-primary rounded px-2 py-1 text-white hover:bg-primary-light'
+        onClick={() => setCount(count + 1)}
+      > */}
+      <button
+        className={`bg-primary rounded px-2 py-1 text-white hover:bg-primary-light ${
+          x && 'sm:hover:underline'
+        }`}
+        onClick={() => setCount(count + 1)}
+      >
+        Clicked {count} times
+      </button>
+    </>
+  );
+};
+
+<h3 className='text-primary '>
+  Click me 👉 <Counter2 />
+</h3>
+
+<p className='text-primary'>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus alias
+  tenetur dicta molestias eius, sed itaque sapiente officiis ad porro?
+</p>
+<p className='text-primary'>
+  Lorem ipsum dolor sit amet consectetr adipisicing elit. Excepturi obcaecati ex
+  impedit soluta maiores eaque voluptatibus provident quisquam quod a ab aut
+  nobis tempora officiis incidunt, sapiente facere ea harum deleniti sunt
+  voluptates eveniet exercitationem iusto possimus! Maxime, nisi sed.
+</p>
+
+<input
+  type='text'
+  className='border-2 border-gray-700 rounded focus:border-primary my-2 p-1'
+  placeholder='Input'
+/>
+
+<div>
+  <textarea
+    className='border-2 border-gray-700 rounded focus:border-primary my-2 p-1 resize max-w-full'
+    cols='30'
+    rows='10'
+    placeholder='This is a resizable textarea'
+  />
+</div>
+
+---
+
+<!-- Headings -->
+
+# Cheatsheet
+
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
+
+<!-- Italics -->
+
+_This text_ is italic
+
+_This text_ is italic
+
+<!-- Strong -->
+
+**This text** is italic
+
+**This text** is italic
+
+<!-- Strikethrough -->
+
+~~This text~~ is strikethrough
+
+<!-- Horizontal Rule -->
+
+---
+
+<!-- Blockquote -->
+
+> This is a quote
+
+<!-- Links -->
+
+[Traversy Media](http://www.traversymedia.com)
+
+[Traversy Media](http://www.traversymedia.com 'Traversy Media')
+
+<!-- UL -->
+
+- Item 1
+- Item 2
+- Item 3
+  - Nested Item 1
+  - Nested Item 2
+
+<!-- OL -->
+
+1. Item 1
+1. Item 2
+1. Item 3
+
+<!-- Inline Code Block -->
+
+`<p>This is a paragraph</p>`
+
+<!-- Images -->
+
+![Markdown Logo](https://markdown-here.com/img/icon256.png)
+
+<!-- Github Markdown -->
+
+<!-- Code Blocks -->
+
+```bash
+  npm install
+
+  npm start
+```
+
+```javascript
+function add(num1, num2) {
+  return num1 + num2;
+}
+```
+
+```python
+  def add(num1, num2):
+    return num1 + num2
+```
+
+<!-- Tables -->
+
+| Name     | Email          |
+| -------- | -------------- |
+| John Doe | john@gmail.com |
+| Jane Doe | jane@gmail.com |
+
+<!-- Task List -->
+
+- [x] Task 1
+- [x] Task 2
+- [ ] Task 3
+
+---
