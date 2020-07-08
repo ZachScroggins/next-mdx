@@ -44,7 +44,7 @@ const HeaderNav = props => {
   return (
     <div
       id='nav'
-      className='nav bg-primary text-center p-2 sticky top-0 left-0'
+      className='nav bg-primary text-center p-2 sticky top-0 left-0 z-10'
     >
       <h1 className='text-2xl font-semibold underline'>Next MDX Tailwind</h1>
       <p>{props.content}</p>

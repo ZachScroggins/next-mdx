@@ -8,6 +8,7 @@ import useClickAway from '../utils/useClickAway';
 import { MdAndroid } from 'react-icons/md';
 import { FiChrome } from 'react-icons/fi';
 import { FaChrome } from 'react-icons/fa';
+import LinearProgress from '../components/LinearProgress';
 
 const greenH1 = {
   h1: props => <h1 className='text-3xl text-green-600' {...props} />,
@@ -41,15 +42,21 @@ const page2 = () => {
         <HOneExample type={'red'} />
       </MDXProvider>
       <MdAndroid
-        color='blue'
+        // color='blue'
+        color='#fa7aaa'
         size='4rem'
         className='shadow-outline hover:bg-black'
         style={{ border: '3px solid green' }}
         title='Material Design Android Icon'
       />
-      <MdAndroid size='4rem' className='text-purple-700 hover:text-green-500' />
-      <FiChrome size='4rem' />
-      <FaChrome size='4rem' />
+      <MdAndroid
+        size='4rem'
+        className='text-purple-700 hover:text-green-500 '
+      />
+      <FiChrome size='4rem' className='stroke-2 text-pink-600 ' />
+      <FaChrome size='4rem' className='text-teal-400' />
+      {/* <LinearProgress fgClasses='bg-green-600' bgClasses='bg-white' /> */}
+      <LinearProgress />
       <div
         ref={testRef}
         className='bg-blue-400 h-40 w-48 p-3 cursor-pointer'
