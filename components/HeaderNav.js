@@ -4,42 +4,42 @@ import { useEffect } from 'react';
 const HeaderNav = props => {
   let prevScrollpos;
 
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      prevScrollpos = window.pageYOffset;
-      const hideNav = () => {
-        let currentScrollpos = window.pageYOffset;
-        if (currentScrollpos > 150) {
-          if (prevScrollpos > currentScrollpos) {
-            document.getElementById('nav').style.top = '0';
-          } else {
-            document.getElementById('nav').style.top = '-100px';
-          }
-        }
-        prevScrollpos = currentScrollpos;
-      };
-      window.addEventListener('scroll', hideNav);
-      return () => {
-        document.removeEventListener('scroll', hideNav);
-      };
-    }
-  }, [prevScrollpos]);
-
-  // if (typeof window !== 'undefined') {
-  //   let prevScrollpos = window.pageYOffset;
-  //   const hideNav = () => {
-  //     let currentScrollpos = window.pageYOffset;
-  //     if (currentScrollpos > 150) {
-  //       if (prevScrollpos > currentScrollpos) {
-  //         document.getElementById('nav').style.top = '0';
-  //       } else {
-  //         document.getElementById('nav').style.top = '-100px';
+  // useEffect(() => {
+  //   if (typeof window !== 'undefined') {
+  //     prevScrollpos = window.pageYOffset;
+  //     const hideNav = () => {
+  //       let currentScrollpos = window.pageYOffset;
+  //       if (currentScrollpos > 150) {
+  //         if (prevScrollpos > currentScrollpos) {
+  //           document.getElementById('nav').style.top = '0';
+  //         } else {
+  //           document.getElementById('nav').style.top = '-100px';
+  //         }
   //       }
-  //     }
-  //     prevScrollpos = currentScrollpos;
-  //   };
-  //   window.addEventListener('scroll', hideNav);
-  // }
+  //       prevScrollpos = currentScrollpos;
+  //     };
+  //     window.addEventListener('scroll', hideNav);
+  //     return () => {
+  //       document.removeEventListener('scroll', hideNav);
+  //     };
+  //   }
+  // }, [prevScrollpos]);
+
+  if (typeof window !== 'undefined') {
+    let prevScrollpos = window.pageYOffset;
+    const hideNav = () => {
+      let currentScrollpos = window.pageYOffset;
+      if (currentScrollpos > 150) {
+        if (prevScrollpos > currentScrollpos) {
+          document.getElementById('nav').style.top = '0';
+        } else {
+          document.getElementById('nav').style.top = '-100px';
+        }
+      }
+      prevScrollpos = currentScrollpos;
+    };
+    window.addEventListener('scroll', hideNav);
+  }
 
   return (
     <div

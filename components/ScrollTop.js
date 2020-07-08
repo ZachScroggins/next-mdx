@@ -1,18 +1,6 @@
 import { useEffect } from 'react';
 
 const ScrollTop = () => {
-  // if (typeof window !== 'undefined') {
-  //   const scrollTop = () => {
-  //     let scrollpos = window.pageYOffset;
-  //     if (scrollpos > 150) {
-  //       document.getElementById('scroller').style.display = 'block';
-  //     } else {
-  //       document.getElementById('scroller').style.display = 'none';
-  //     }
-  //   };
-  //   window.addEventListener('scroll', scrollTop);
-  // }
-
   let scrollPos;
 
   useEffect(() => {

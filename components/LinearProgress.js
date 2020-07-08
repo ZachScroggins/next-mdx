@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const LinearProgress = ({ bgClasses, fgClasses = 'bg-black' }) => {
   return (
     <div
-      className={`h-1 w-full overflow-hidden absolute top-0 left-0 z-20 ${bgClasses}`}
+      className={`h-1 w-full overflow-hidden fixed top-0 left-0 z-20 ${bgClasses}`}
     >
       <motion.div
         className={`h-5 ${fgClasses}`}
