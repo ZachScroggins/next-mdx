@@ -4,6 +4,16 @@
   @apply text-5xl;
 } */
 
+*:focus {
+  outline: none !important;
+}
+
+@screen lg {
+  body {
+    overscroll-behavior: none;
+  }
+}
+
 @tailwind components;
 
 .markdown-body .octicon {

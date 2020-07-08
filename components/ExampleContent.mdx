@@ -24,14 +24,21 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non magnam corporis no
 
 export const Counter2 = () => {
   const [count, setCount] = useState(1);
+  const x = true;
   const handleIncrease = () => {
     setCount(count + 1);
   };
   return (
     <>
       {/* <button onClick={handleIncrease}>increase</button> */}
+      {/* <button
+        className='bg-primary rounded px-2 py-1 text-white hover:bg-primary-light'
+        onClick={() => setCount(count + 1)}
+      > */}
       <button
-        className='bg-primary rounded px-2 py-1 text-white hover:bg-primary-light focus:outline-none'
+        className={`bg-primary rounded px-2 py-1 text-white hover:bg-primary-light ${
+          x && 'sm:hover:underline'
+        }`}
         onClick={() => setCount(count + 1)}
       >
         Clicked {count} times
@@ -54,6 +61,21 @@ export const Counter2 = () => {
   nobis tempora officiis incidunt, sapiente facere ea harum deleniti sunt
   voluptates eveniet exercitationem iusto possimus! Maxime, nisi sed.
 </p>
+
+<input
+  type='text'
+  className='border-2 border-gray-700 rounded focus:border-primary my-2 p-1'
+  placeholder='Input'
+/>
+
+<div>
+  <textarea
+    className='border-2 border-gray-700 rounded focus:border-primary my-2 p-1 resize max-w-full'
+    cols='30'
+    rows='10'
+    placeholder='This is a resizable textarea'
+  />
+</div>
 
 ---
 
