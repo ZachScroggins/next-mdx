@@ -1,3 +1,3 @@
-# hello
+# next-mdx-tailwind-framer
 
 ~~strikethrough~~
