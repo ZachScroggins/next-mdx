@@ -20,7 +20,7 @@ const redH1 = {
   h1: props => <h1 className='text-3xl text-red-600' {...props} />,
 };
 
-const page2 = () => {
+const page4 = () => {
   const testRef = useRef(null);
   const [open, setOpen] = useState(false);
 
@@ -72,6 +72,33 @@ const page2 = () => {
         <p>Click away to close</p>
       </div>
       {open && <div className='bg-red-400 h-40 w-48'></div>}
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi
+        expedita, voluptatum culpa vitae, exercitationem commodi praesentium
+        aperiam, id error itaque. Quos ab placeat laboriosam nisi reprehenderit
+        nostrum tempora cupiditate deserunt aut doloremque quis saepe eveniet,
+        voluptates et quo ipsa? Quibusdam iure voluptatem, aliquam beatae
+        provident voluptates nobis asperiores ipsa quidem laudantium architecto
+        cum nam magnam iste! Molestias culpa consectetur cumque magnam sequi
+        optio aspernatur fuga saepe minus ipsa pariatur porro expedita, aliquam
+        itaque recusandae facilis quidem, maiores eaque nisi nihil nam
+        consequatur quas ipsam eius? Mollitia possimus quam facere, commodi
+        numquam eveniet quisquam ut necessitatibus, ipsa a atque non nobis animi
+        amet saepe id accusantium quasi voluptatem quo officiis expedita
+        molestiae asperiores voluptates! Dicta, deserunt quidem. Quia ex illum
+        nemo eum incidunt velit beatae ratione enim in fugit amet soluta dicta,
+        earum distinctio deserunt voluptate cum est fugiat. Est, voluptatem
+        maiores distinctio non laudantium laboriosam exercitationem. Eligendi
+        soluta doloremque natus repellendus nulla sunt amet ducimus praesentium
+        dignissimos dicta voluptatibus, fuga harum aliquid ab tempora provident
+        dolorem inventore ratione iste consequuntur quidem! Aliquid aut
+        accusamus inventore, pariatur illo repudiandae hic voluptates nihil,
+        corporis porro tempore ducimus quidem dolorum placeat quos, suscipit
+        veniam nemo iure a doloremque! Recusandae suscipit voluptatibus
+        corrupti.
+      </p>
+
       <p className='pt-32 -mt-32' id='test'>
         JSX same page anchor tag should scroll here
       </p>
@@ -95,4 +122,4 @@ const page2 = () => {
   );
 };
 
-export default page2;
+export default page4;

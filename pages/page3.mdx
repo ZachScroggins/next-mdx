@@ -1,14 +1,16 @@
 import HeaderNav from '../components/HeaderNav';
+import ExampleContent from '../components/ExampleContent.mdx';
 
-<HeaderNav content={'(This is a JS component in a MDX file)'} />
+<HeaderNav content={'(JS component in MDX file)'} />
 
-<div className="markdown-body ">
+<div className="markdown-body">
 
 # This is page 3
 
 <img
   src='https://source.unsplash.com/random/400x300.jpg'
   alt='rando'
+  title='rando'
   height='300'
   width='400'
   className='bg-gray-500'
@@ -19,5 +21,7 @@ import HeaderNav from '../components/HeaderNav';
 - pass in img attributes as props
 - fade in motion.img onLoad
 - use [Hero Patterns](http://www.heropatterns.com/) as background image
+
+<ExampleContent />
 
 </div>
