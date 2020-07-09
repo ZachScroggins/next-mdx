@@ -28,7 +28,7 @@ const page4 = () => {
 
   return (
     <div>
-      <HeaderNav content={'(JS component in JSX file position:fixed)'} />
+      <HeaderNav content={'(JS component in JSX file)'} />
       <HOneExample type={'default'} />
       <h1>JSX h1 with no className</h1>
       <a

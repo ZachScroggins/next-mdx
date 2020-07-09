@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { MDXProvider } from '@mdx-js/react';
 import HOneExample from '../components/HOneExample.mdx';
-import HeaderNav from '../components/HeaderNav';
+import FixedHeaderNav from '../components/FixedHeaderNav';
 import ScrollTop from '../components/ScrollTop';
 import ExampleContent from '../components/ExampleContent.mdx';
 import useClickAway from '../utils/useClickAway';
@@ -27,8 +27,8 @@ const page2 = () => {
   useClickAway(testRef, setOpen);
 
   return (
-    <div>
-      <HeaderNav content={'(JS component in JSX file position:fixed)'} />
+    <div className='pt-24'>
+      <FixedHeaderNav content={'(JS component in JSX file position:fixed)'} />
       <HOneExample type={'default'} />
       <h1>JSX h1 with no className</h1>
       <a
