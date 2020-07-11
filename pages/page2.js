@@ -27,17 +27,16 @@ const page2 = () => {
   useClickAway(testRef, setOpen);
 
   return (
-    <div className='pt-24'>
-      <FixedHeaderNav content={'(JS component in JSX file position:fixed)'} />
-      <HOneExample type={'default'} />
-      <h1>JSX h1 with no className</h1>
+    <div className='pt-24 px-6'>
+      <h1>JSX h1 with no className Tailwind default style</h1>
       <a
         href='#test'
         className='text-primary underline hover:text-primary-dark'
       >
         JSX same page anchor tag
       </a>
-      <h1 className='text-3xl'>This is a JSX h1 💯</h1>
+      <h2>This is a JSX h2 💯</h2>
+      <HOneExample type={'default'} />
       <MDXProvider components={greenH1}>
         <HOneExample type={'green'} />
         <MDXProvider components={blueH1}>
@@ -86,11 +85,6 @@ const page2 = () => {
         <ExampleContent />
       </div>
       <ScrollTop />
-      <style jsx global>{`
-        html {
-          scroll-behavior: smooth;
-        }
-      `}</style>
     </div>
   );
 };

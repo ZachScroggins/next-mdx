@@ -3,9 +3,6 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  // corePlugins: {
-  //   preflight: false,
-  // },
   theme: {
     extend: {
       colors: {

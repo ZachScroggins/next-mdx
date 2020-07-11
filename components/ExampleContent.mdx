@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Counter2 from './Counter2';
 
 <h1>{props.title}</h1>
 
@@ -22,34 +23,9 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non magnam corporis no
   <em>This</em> is JSX!
 </h2>
 
-export const Counter2 = () => {
-  const [count, setCount] = useState(1);
-  const x = true;
-  const handleIncrease = () => {
-    setCount(count + 1);
-  };
-  return (
-    <>
-      {/* <button onClick={handleIncrease}>increase</button> */}
-      {/* <button
-        className='bg-primary rounded px-2 py-1 text-white hover:bg-primary-light'
-        onClick={() => setCount(count + 1)}
-      > */}
-      <button
-        className={`bg-primary rounded px-2 py-1 text-white hover:bg-primary-light ${
-          x && 'sm:hover:underline'
-        }`}
-        onClick={() => setCount(count + 1)}
-      >
-        Clicked {count} times
-      </button>
-    </>
-  );
-};
+<h3 className='text-primary '>Click me 👇</h3>
 
-<h3 className='text-primary '>
-  Click me 👉 <Counter2 />
-</h3>
+<Counter2 />
 
 <p className='text-primary'>
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus alias
@@ -63,17 +39,19 @@ export const Counter2 = () => {
 </p>
 
 <input
-  type='text'
+  type='number'
+  aria-label='input1'
   className='border-2 border-gray-700 rounded focus:border-primary my-2 p-1'
-  placeholder='Input'
+  placeholder='Focus here'
 />
 
 <div>
   <textarea
     className='border-2 border-gray-700 rounded focus:border-primary my-2 p-1 resize max-w-full'
+    aria-label='input2'
     cols='30'
     rows='10'
-    placeholder='This is a resizable textarea'
+    placeholder='Resize me'
   />
 </div>
 
@@ -177,8 +155,12 @@ function add(num1, num2) {
 
 <!-- Task List -->
 
+<!--
+
 - [x] Task 1
 - [x] Task 2
 - [ ] Task 3
+
+-->
 
 ---
