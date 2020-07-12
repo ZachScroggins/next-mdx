@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { MDXProvider } from '@mdx-js/react';
 import HOneExample from '../components/HOneExample.mdx';
 import FixedHeaderNav from '../components/FixedHeaderNav';
@@ -9,6 +9,7 @@ import { MdAndroid } from 'react-icons/md';
 import { FiChrome } from 'react-icons/fi';
 import { FaChrome } from 'react-icons/fa';
 import LinearProgress from '../components/LinearProgress';
+// import { useViewportScroll } from 'framer-motion';
 
 const greenH1 = {
   h1: props => <h1 className='text-3xl text-green-600' {...props} />,
@@ -23,6 +24,14 @@ const redH1 = {
 const page2 = () => {
   const testRef = useRef(null);
   const [open, setOpen] = useState(false);
+  // const { scrollY } = useViewportScroll();
+
+  // useEffect(() => {
+  //   scrollY.onChange(() => console.log(scrollY, scrollY.current));
+  //   return () => {
+  //     scrollY.onChange();
+  //   };
+  // }, [scrollY]);
 
   useClickAway(testRef, setOpen);
 
@@ -71,6 +80,7 @@ const page2 = () => {
         <p>Click away to close</p>
       </div>
       {open && <div className='bg-red-400 h-40 w-48'></div>}
+      {/* <p>{scrollY.current}</p> */}
       <p className='pt-32 -mt-32' id='test'>
         JSX same page anchor tag should scroll here
       </p>

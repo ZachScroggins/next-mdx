@@ -1,4 +1,4 @@
-# ⚡️💥 next-mdx 💥⚡️
+# ⚡️💥 next-mdx
 
 Test environment for [next-mdx](https://github.com/vercel/next.js/tree/canary/packages/next-mdx)
 with [Tailwind CSS](https://tailwindcss.com),
