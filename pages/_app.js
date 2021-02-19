@@ -12,7 +12,7 @@ const mdComponents = {
 
 const Wrapper = props => <main className='markdown-body' {...props} />;
 
-export default ({ Component, pageProps }) => {
+const App = ({ Component, pageProps }) => {
   const router = useRouter();
 
   return (
@@ -35,3 +35,5 @@ export default ({ Component, pageProps }) => {
     </>
   );
 };
+
+export default App;
